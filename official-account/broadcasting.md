@@ -84,6 +84,7 @@ $app->broadcasting->sendCard($cardId, $tagId);
 ### 发送预览群发消息给指定的 `openId` 用户
 
 ```php
+预览群发消息的`openId`限制为一个用户
 $app->broadcasting->previewText($text, $openId);
 $app->broadcasting->previewNews($mediaId, $openId);
 $app->broadcasting->previewVoice($mediaId, $openId);
@@ -95,7 +96,7 @@ $app->broadcasting->previewCard($cardId, $openId);
 ### 发送预览群发消息给指定的微信号用户
 
 > $wxanme 是用户的微信号，比如：notovertrue
-
+预览群发消息的`notovertrue`限制为一个用户
 ```php
 $app->broadcasting->previewTextByName($text, $wxname);
 $app->broadcasting->previewNewsByName($mediaId, $wxname);
